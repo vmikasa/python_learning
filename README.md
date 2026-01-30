@@ -1,0 +1,3 @@
+这个learning项目记录了我的python学习记录。
+以上python文件都是我在pycharm平台上写的代码
+我将从基础语法开始，逐步练习和总结
