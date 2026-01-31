@@ -1,5 +1,8 @@
 # 学习布尔类型数据
 
+import random
+
+
 # 定义变量存储布尔类型的数据
 bool1=True
 bool2=False
@@ -43,10 +46,29 @@ print("灾狗莫叫太大声\n\n")
 
 age=input("欢迎来到灾狗爱打瓦，请输入你的年龄：")
 age=int(age)
+money=666
 if age>=18:
     print(f"灾狗已经{age}岁了，可以打瓦了")
+elif money>100:
+    print(f"灾狗是富狗，有{money}元钱，又可以打瓦了")
 else:
     print(f"灾狗只有{age}岁，小毛毛打什么打")
-print("灾狗又乱叫起来了")
+print("灾狗又乱叫起来了，爽了你了")
 
+num=random.randint(1,10)
+if num==int(input("猜数字，1-10：")):
+    print("你真聪明，猜对了")
+elif num==int(input("再猜一次，1-10：")):
+    print("猜对了")
+else:
+    print(f"菜狗，正确答案是{num}")
 
+# 判断奇数偶数
+try:
+    num=int(input("请输入一个整数，我来判断奇数偶数："))
+    if num%2==0:
+        print(f"{num}是偶数")
+    else:
+        print(f"{num}是奇数")
+except ValueError:
+    print("输入错误，请输入一个整数")
