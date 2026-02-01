@@ -5,7 +5,7 @@
 ## 目录说明
 - `day1/`：基础输出、print的简单拼接
 - `day2/`：type、基础数据类型、print的f-string
-- `day3/`：学习input
-- `day4/`：
+- `day3/`：学习input，以及if语句
+- `day4/`：学习了while语句
 
 学习笔记记录在 OneNote。
