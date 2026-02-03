@@ -22,13 +22,23 @@ def is_even(num):
 
 
 def arithemetic_sum(a1,an,step):
-   if step==0:
+    """
+
+    :param a1: 首项
+    :param an: 尾项
+    :param step: 公差
+    :return: 返回值是等差数列的和
+    """
+    if step==0:
        return None
-   else:
+    else:
        sn=0
        for i in range(a1,an+step,step):
-           sn+=i
-        return sn
+        sn+=i
+    return sn
+
+
+
 
 
 print(my_square(3))
@@ -38,4 +48,5 @@ print(is_even(7))
 print(is_even(10))
 
 print(arithemetic_sum(1,100,1))
+arithemetic_sum(1,10,0)
 
