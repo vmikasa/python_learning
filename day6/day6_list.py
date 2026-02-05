@@ -10,7 +10,7 @@ my_list=["zai","gou","si","de"]
 
 list1 = [10, 20, 30, 40, 50]
 num=len(list1)
-print(list[-1])
+print(list1[-1])
 list1[1]=999
 print(list1[1:4])
 for item in list1:
