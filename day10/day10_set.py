@@ -77,3 +77,19 @@ print(fs)       # 输出：frozenset({1, 2, 3})
 my_set.clear()
 print(my_set)      # 输出：set()
 
+# 集合的复制：使用copy方法
+s7 = s4.copy()
+print(s7)       # 输出：{1, 2, 3}
+
+# 集合的长度：使用len函数
+print(len(s4))      # 输出：3
+
+# 集合的练习
+
+fruits = ['苹果', '香蕉', '苹果', '橙子', '香蕉', '葡萄', '橙子', '草莓', '葡萄', '西瓜']
+set1=set()
+for x in fruits:
+    set1.add(x)
+
+print(set1)
+print(len(set1))
