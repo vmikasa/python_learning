@@ -67,7 +67,7 @@ print(dict3.setdefault("student4", {"name": "小蓝", "age": 18}))  # 输出：{
 print(dict3)  # 输出：{'student1': {'name': '灾狗', 'age': 21}, 'student2': {'name': '小明', 'age': 20}, 'student3': {'name': '小红', 'age': 19}, 'student4': {'name': '小蓝', 'age': 18}}
 
 # 字典的遍历
-# 遍历字典的key
+# 遍历字典的key。注意这个for循环得到的是key，而不是value
 for key in dict3.keys():
     print(key)  # 输出：student1 student2 student3 student4
 
@@ -75,3 +75,23 @@ for key in dict3.keys():
 for value in dict3.values():
     print(value)  # 输出：{'name': '灾狗', 'age': 21} {'name': '小明', 'age': 20} {'name': '小红', 'age': 19} {'name': '小蓝', 'age': 18}
 
+
+
+# 字典小练习
+dict6={
+    "灾狗":{"部门":"总裁","工资":500000,"级别":3},
+    "军爷":{"部门":"司令","工资":300000,"级别":3},
+    "小红":{"部门":"灾狗的小娇妻","工资":200000,"级别":2},
+    "鼠鼠":{"部门":"保安","工资":3000,"级别":1},
+    "小明":{"部门":"宇宙无敌暴龙战士","工资":50000,"级别":6},
+}
+
+for key in dict6:
+    if dict6[key]["级别"]==1:
+        print(f"{key}升职加薪")
+        dict6[key]["工资"]+=1000
+        dict6[key]["部门"]="保安队长"
+        dict6[key]["级别"]=2
+
+for key in dict6.items():
+    print(key)
