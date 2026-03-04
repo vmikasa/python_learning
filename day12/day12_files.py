@@ -38,3 +38,5 @@ with open("zaigou.txt","w",encoding="utf-8") as f:
     f.flush()
 
 # writeline用于写多行，需要自己加换行符。而且writeline是要自己先把内容处理成列表，所以准确来说，writeline是写入列表的
+
+# 小知识，python允许一个with打开多个文件
