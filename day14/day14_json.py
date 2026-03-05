@@ -57,4 +57,7 @@ def get_user_by_name(path,name):
     else:
         return None
 
+# json.dump和json.dumps的区别
+# json.dump是把Python对象写入文件，而json.dumps是把Python对象转换成JSON字符串。json.dump需要一个文件对象作为参数，而json.dumps返回一个字符串，可以直接打印或者赋值给变量。json.dump的语法是json.dump(obj, fp, ensure_ascii=False, indent=2)，其中obj是要写入的Python对象，fp是文件对象，ensure_ascii=False表示不转义非ASCII字符，indent=2表示缩进2个空格。json.dumps的语法是json.dumps(obj, ensure_ascii=False, indent=2
+
 
