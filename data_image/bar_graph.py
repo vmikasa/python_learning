@@ -97,10 +97,10 @@ for year in sorted_years:
 
 # 设置时间线自动播放
 timeline.add_schema(
-    play_interval=1000,  # 每两秒切换一次
+    play_interval=500,  # 每两秒切换一次
     is_auto_play=True,   # 自动播放
     is_loop_play=True,   # 循环播放
-    is_timeline_show=True # 显示时间线
+    is_timeline_show=False # 显示时间线
 )
 
 # 绘图
