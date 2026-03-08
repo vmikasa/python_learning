@@ -44,3 +44,6 @@ for i in range(student_count):
 print("学生信息录入完成！下面是所有学生的信息：")
 for student in student_list:
     print(f"姓名：{student.name}，年龄：{student.age}，地址：{student.address}")
+
+
+
