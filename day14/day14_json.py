@@ -21,7 +21,8 @@ cfg = {
 }
 
 with open("config.json", "w", encoding="utf-8") as f:
-    json.dump(cfg, f, ensure_ascii=False, indent=2)
+    json.dump(cfg, f, ensure_ascii=False, indent=2)     # ensure_ascii的意思是是否转义成编码。肯定选择否，要不然就没有中文了。
+                                                        # indent的意思是，缩进两个空格。是美观
 
 
 
